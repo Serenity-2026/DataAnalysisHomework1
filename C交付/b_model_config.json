@@ -1,0 +1,9 @@
+{
+  "data_sha256": "e96d3a2c6731334d0ec12197c564870d74b988477fa842aefb847377785d4f15",
+  "parameters": {
+    "nb": {"priors": null, "var_smoothing": 1e-9},
+    "svm_lin": {"kernel": "linear", "C": 1.0, "gamma": "scale", "probability": true, "random_state": 42, "break_ties": false, "cache_size": 200, "class_weight": null, "coef0": 0.0, "decision_function_shape": "ovr", "degree": 3, "max_iter": -1, "shrinking": true, "tol": 0.001, "verbose": false},
+    "svm_rbf": {"kernel": "rbf", "C": 1.0, "gamma": "scale", "probability": true, "random_state": 42, "break_ties": false, "cache_size": 200, "class_weight": null, "coef0": 0.0, "decision_function_shape": "ovr", "degree": 3, "max_iter": -1, "shrinking": true, "tol": 0.001, "verbose": false},
+    "mlp": {"hidden_layer_sizes": [64, 32], "max_iter": 500, "random_state": 42, "activation": "relu", "alpha": 0.0001, "batch_size": "auto", "beta_1": 0.9, "beta_2": 0.999, "early_stopping": false, "epsilon": 1e-8, "learning_rate": "constant", "learning_rate_init": 0.001, "max_fun": 15000, "momentum": 0.9, "n_iter_no_change": 10, "nesterovs_momentum": true, "power_t": 0.5, "shuffle": true, "solver": "adam", "tol": 0.0001, "validation_fraction": 0.1, "verbose": false, "warm_start": false}
+  }
+}
