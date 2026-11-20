@@ -6,6 +6,10 @@
 # 用户提供的 Notebook 模板；本项目不维护 Notebook
 /*.ipynb
 
+# 本地课程材料与协作指令，不外传到远端仓库
+/AGENTS.md
+/学生任务书.docx
+
 # Python 环境与缓存
 __pycache__/
 *.py[cod]
