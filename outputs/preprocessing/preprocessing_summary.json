@@ -1,0 +1,206 @@
+{
+  "raw_shape": {
+    "rows": 6014,
+    "columns": 21
+  },
+  "clean_shape_before_split": {
+    "rows": 6013,
+    "feature_columns_before_encoding": 19
+  },
+  "normalization_counts": {
+    "customerID": 0,
+    "gender": 0,
+    "Partner": 0,
+    "Dependents": 0,
+    "PhoneService": 0,
+    "MultipleLines": 0,
+    "InternetService": 0,
+    "OnlineSecurity": 0,
+    "OnlineBackup": 0,
+    "DeviceProtection": 0,
+    "TechSupport": 0,
+    "StreamingTV": 0,
+    "StreamingMovies": 0,
+    "Contract": 0,
+    "PaperlessBilling": 0,
+    "PaymentMethod": 0,
+    "TotalCharges": 9,
+    "Churn": 0
+  },
+  "row_cleaning": {
+    "all_empty_rows_removed": 0,
+    "missing_target_rows_removed": 1,
+    "severely_incomplete_missing_target_rows": 1,
+    "fully_duplicated_rows_removed": 0
+  },
+  "numeric_cleaning": {
+    "total_charges_nonblank_conversion_failures": 0,
+    "total_charges_tenure_zero_filled_with_zero": 9,
+    "total_charges_remaining_missing_before_split": 0
+  },
+  "split": {
+    "test_size": 0.2,
+    "random_state": 42,
+    "stratified": true,
+    "train_rows": 4810,
+    "test_rows": 1203,
+    "train_label_ratio": {
+      "0": 0.7357588357588357,
+      "1": 0.26424116424116423
+    },
+    "test_label_ratio": {
+      "0": 0.7356608478802993,
+      "1": 0.26433915211970077
+    }
+  },
+  "encoding": {
+    "method": "pandas.get_dummies",
+    "drop_first": true,
+    "numeric_features": [
+      "SeniorCitizen",
+      "tenure",
+      "MonthlyCharges",
+      "TotalCharges"
+    ],
+    "categorical_features": [
+      "gender",
+      "Partner",
+      "Dependents",
+      "PhoneService",
+      "MultipleLines",
+      "InternetService",
+      "OnlineSecurity",
+      "OnlineBackup",
+      "DeviceProtection",
+      "TechSupport",
+      "StreamingTV",
+      "StreamingMovies",
+      "Contract",
+      "PaperlessBilling",
+      "PaymentMethod"
+    ],
+    "category_levels_fitted_on_training": {
+      "gender": [
+        "Female",
+        "Male"
+      ],
+      "Partner": [
+        "No",
+        "Yes"
+      ],
+      "Dependents": [
+        "No",
+        "Yes"
+      ],
+      "PhoneService": [
+        "No",
+        "Yes"
+      ],
+      "MultipleLines": [
+        "No",
+        "No phone service",
+        "Yes"
+      ],
+      "InternetService": [
+        "DSL",
+        "Fiber optic",
+        "No"
+      ],
+      "OnlineSecurity": [
+        "No",
+        "No internet service",
+        "Yes"
+      ],
+      "OnlineBackup": [
+        "No",
+        "No internet service",
+        "Yes"
+      ],
+      "DeviceProtection": [
+        "No",
+        "No internet service",
+        "Yes"
+      ],
+      "TechSupport": [
+        "No",
+        "No internet service",
+        "Yes"
+      ],
+      "StreamingTV": [
+        "No",
+        "No internet service",
+        "Yes"
+      ],
+      "StreamingMovies": [
+        "No",
+        "No internet service",
+        "Yes"
+      ],
+      "Contract": [
+        "Month-to-month",
+        "One year",
+        "Two year"
+      ],
+      "PaperlessBilling": [
+        "No",
+        "Yes"
+      ],
+      "PaymentMethod": [
+        "Bank transfer (automatic)",
+        "Credit card (automatic)",
+        "Electronic check",
+        "Mailed check"
+      ]
+    },
+    "unknown_test_categories": {
+      "gender": 0,
+      "Partner": 0,
+      "Dependents": 0,
+      "PhoneService": 0,
+      "MultipleLines": 0,
+      "InternetService": 0,
+      "OnlineSecurity": 0,
+      "OnlineBackup": 0,
+      "DeviceProtection": 0,
+      "TechSupport": 0,
+      "StreamingTV": 0,
+      "StreamingMovies": 0,
+      "Contract": 0,
+      "PaperlessBilling": 0,
+      "PaymentMethod": 0
+    },
+    "feature_count": 30
+  },
+  "imputation": {
+    "numeric_strategy": "training median",
+    "categorical_strategy": "training most_frequent",
+    "numeric_statistics": {
+      "SeniorCitizen": 0.0,
+      "tenure": 28.0,
+      "MonthlyCharges": 70.3,
+      "TotalCharges": 1387.125
+    },
+    "categorical_statistics": {
+      "gender": "Male",
+      "Partner": "No",
+      "Dependents": "No",
+      "PhoneService": "Yes",
+      "MultipleLines": "No",
+      "InternetService": "Fiber optic",
+      "OnlineSecurity": "No",
+      "OnlineBackup": "No",
+      "DeviceProtection": "No",
+      "TechSupport": "No",
+      "StreamingTV": "No",
+      "StreamingMovies": "No",
+      "Contract": "Month-to-month",
+      "PaperlessBilling": "Yes",
+      "PaymentMethod": "Electronic check"
+    }
+  },
+  "scaling": {
+    "method": "StandardScaler",
+    "fit_on_training_only": true,
+    "n_samples_seen": 4810
+  }
+}
