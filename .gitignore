@@ -1,0 +1,28 @@
+# 原始课程数据（默认不提交）
+/telco_churn.csv
+/data/*.csv
+!/data/README.md
+
+# 用户提供的 Notebook 模板；本项目不维护 Notebook
+/*.ipynb
+
+# Python 环境与缓存
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# 编辑器与系统文件
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 临时文件
+*.tmp
+*.temp
+~$*

@@ -1,0 +1,207 @@
+{
+  "shape": {
+    "rows": 6014,
+    "columns": 21
+  },
+  "columns": [
+    "customerID",
+    "gender",
+    "SeniorCitizen",
+    "Partner",
+    "Dependents",
+    "tenure",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod",
+    "MonthlyCharges",
+    "TotalCharges",
+    "Churn"
+  ],
+  "dtypes": {
+    "customerID": "object",
+    "gender": "object",
+    "SeniorCitizen": "float64",
+    "Partner": "object",
+    "Dependents": "object",
+    "tenure": "float64",
+    "PhoneService": "object",
+    "MultipleLines": "object",
+    "InternetService": "object",
+    "OnlineSecurity": "object",
+    "OnlineBackup": "object",
+    "DeviceProtection": "object",
+    "TechSupport": "object",
+    "StreamingTV": "object",
+    "StreamingMovies": "object",
+    "Contract": "object",
+    "PaperlessBilling": "object",
+    "PaymentMethod": "object",
+    "MonthlyCharges": "float64",
+    "TotalCharges": "object",
+    "Churn": "object"
+  },
+  "missing": {
+    "customerID": {
+      "count": 0,
+      "ratio": 0.0
+    },
+    "gender": {
+      "count": 0,
+      "ratio": 0.0
+    },
+    "SeniorCitizen": {
+      "count": 1,
+      "ratio": 0.00016627868307283005
+    },
+    "Partner": {
+      "count": 1,
+      "ratio": 0.00016627868307283005
+    },
+    "Dependents": {
+      "count": 1,
+      "ratio": 0.00016627868307283005
+    },
+    "tenure": {
+      "count": 1,
+      "ratio": 0.00016627868307283005
+    },
+    "PhoneService": {
+      "count": 1,
+      "ratio": 0.00016627868307283005
+    },
+    "MultipleLines": {
+      "count": 1,
+      "ratio": 0.00016627868307283005
+    },
+    "InternetService": {
+      "count": 1,
+      "ratio": 0.00016627868307283005
+    },
+    "OnlineSecurity": {
+      "count": 1,
+      "ratio": 0.00016627868307283005
+    },
+    "OnlineBackup": {
+      "count": 1,
+      "ratio": 0.00016627868307283005
+    },
+    "DeviceProtection": {
+      "count": 1,
+      "ratio": 0.00016627868307283005
+    },
+    "TechSupport": {
+      "count": 1,
+      "ratio": 0.00016627868307283005
+    },
+    "StreamingTV": {
+      "count": 1,
+      "ratio": 0.00016627868307283005
+    },
+    "StreamingMovies": {
+      "count": 1,
+      "ratio": 0.00016627868307283005
+    },
+    "Contract": {
+      "count": 1,
+      "ratio": 0.00016627868307283005
+    },
+    "PaperlessBilling": {
+      "count": 1,
+      "ratio": 0.00016627868307283005
+    },
+    "PaymentMethod": {
+      "count": 1,
+      "ratio": 0.00016627868307283005
+    },
+    "MonthlyCharges": {
+      "count": 1,
+      "ratio": 0.00016627868307283005
+    },
+    "TotalCharges": {
+      "count": 1,
+      "ratio": 0.00016627868307283005
+    },
+    "Churn": {
+      "count": 1,
+      "ratio": 0.00016627868307283005
+    }
+  },
+  "blank_strings_after_strip": {
+    "customerID": 0,
+    "gender": 0,
+    "Partner": 0,
+    "Dependents": 0,
+    "PhoneService": 0,
+    "MultipleLines": 0,
+    "InternetService": 0,
+    "OnlineSecurity": 0,
+    "OnlineBackup": 0,
+    "DeviceProtection": 0,
+    "TechSupport": 0,
+    "StreamingTV": 0,
+    "StreamingMovies": 0,
+    "Contract": 0,
+    "PaperlessBilling": 0,
+    "PaymentMethod": 0,
+    "TotalCharges": 9,
+    "Churn": 0
+  },
+  "values_with_surrounding_whitespace": {
+    "customerID": 0,
+    "gender": 0,
+    "Partner": 0,
+    "Dependents": 0,
+    "PhoneService": 0,
+    "MultipleLines": 0,
+    "InternetService": 0,
+    "OnlineSecurity": 0,
+    "OnlineBackup": 0,
+    "DeviceProtection": 0,
+    "TechSupport": 0,
+    "StreamingTV": 0,
+    "StreamingMovies": 0,
+    "Contract": 0,
+    "PaperlessBilling": 0,
+    "PaymentMethod": 0,
+    "TotalCharges": 9,
+    "Churn": 0
+  },
+  "all_empty_rows": 0,
+  "missing_target_rows": 1,
+  "severely_incomplete_rows": 1,
+  "fully_duplicated_rows": 0,
+  "customer_id": {
+    "missing": 0,
+    "blank": 0,
+    "duplicated_non_missing": 0
+  },
+  "total_charges": {
+    "original_dtype": "object",
+    "blank_strings": 9,
+    "nonblank_conversion_failures": 0,
+    "numeric_missing_after_conversion": 10,
+    "numeric_missing_with_tenure_zero": 9,
+    "numeric_missing_with_tenure_nonzero": 1
+  },
+  "churn": {
+    "counts_including_missing": {
+      "No": 4424,
+      "Yes": 1589,
+      "<NA>": 1
+    },
+    "valid_ratios": {
+      "No": 0.7357392316647264,
+      "Yes": 0.26426076833527357
+    },
+    "unexpected_non_missing_labels": []
+  }
+}
